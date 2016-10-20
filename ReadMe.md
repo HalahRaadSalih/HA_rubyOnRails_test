@@ -1,4 +1,4 @@
-## Take A Hike with Ruby On Rials
+## Take A Hike with Ruby On Rails
 
 this is the ruby on rails version of the [Take A Hike App](https://github.com/walzerm/hikeWeatherApp) that Lissa and I made while we attending the Galvanize Web Dev Immersive program.
 
