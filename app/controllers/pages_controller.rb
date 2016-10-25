@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
   def home
-  end 
+    @button_title = "Sign in"
+    @button_route = '/auth/signin'
+  end
 end
