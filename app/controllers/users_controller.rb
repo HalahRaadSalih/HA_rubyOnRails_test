@@ -5,6 +5,10 @@ class UsersController < ApplicationController
   end
 
   def sign_in
+    @button_title = "Sign Out"
+    @button_route = '/'
+  end
 
+  def sign_out
   end
 end
