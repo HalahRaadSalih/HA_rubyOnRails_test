@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  resources :users
+  #home page
   get '/' => 'pages#home'
+  # sign in pages
   get '/auth/signin' => 'users#index'
   post '/auth/signin' => 'users#sign_in'
+
+  #sign out pages
   get '/auth/signout' => 'users#sign_out'
+
+  #sign up
   get '/auth/signup' => 'users#new'
+  post '/auth/signup' => 'users#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
