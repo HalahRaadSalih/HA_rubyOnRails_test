@@ -4,13 +4,10 @@
 			<div>
         <%= form_for @user do |f| %>
           <div class="form_group">
-            <%= f.label :first_name %> <br>
-            <%= f.text_field :first_name %>
+            <%= f.label :name %> <br>
+            <%= f.text_field :name %>
           </div>
-          <div class="form_group">
-            <%= f.label :last_name %> <br>
-            <%= f.text_field :last_name %>
-          </div>
+
           <div class="form_group">
             <%= f.label :email %> <br>
             <%= f.text_field :email %>
