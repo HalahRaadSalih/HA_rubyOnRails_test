@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161024225014) do
+ActiveRecord::Schema.define(version: 20161028214228) do
+
+  create_table "hikesinfos", force: true do |t|
+    t.string   "name"
+    t.float    "length"
+    t.float    "elevation"
+    t.float    "highPoint"
+    t.string   "url"
+    t.text     "description"
+    t.decimal  "latitude",    precision: 10, scale: 5
+    t.decimal  "longitude",   precision: 10, scale: 5
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "first_name"
