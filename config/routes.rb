@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :users, :locations
+  resources :users
+  resources :locations do
+  collection do
+    get 'search'
+  end
+end
   #home page
   get '/' => 'pages#home'
   # sign in pages

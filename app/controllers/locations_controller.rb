@@ -18,10 +18,7 @@ class LocationsController < ApplicationController
   end
 
   def search
-
+    print 'Searhing ...................'
   end
 
-  def show
-
-  end
 end
