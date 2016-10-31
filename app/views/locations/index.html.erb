@@ -22,10 +22,18 @@
 					<br>
 					<br>
 				</div>
+        <div class="jumbotron">
+          <% @locations.each do |location| %>
+            <div class="message">
+              <a href="<%=location.url%>"><h4 class="content"><%= location.name %></h4></a>
+              <p class="content"><%= location.description %></p>
+            </div>
+		      <% end %>
+        </div>
 			</div>
 			<div class="col-md-4">
 			  <div class="jumbotron">
-				 <form method="" action="">
+				 <form method="GET" action="/locations/search">
 				  <label for="seach">Search for Hike</label>
 					<div class="form-group">
 						<label for="seach">Name</label>
