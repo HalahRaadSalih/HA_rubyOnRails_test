@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <% @locations.each do |location| %>
+    <div class="message">
+      <a href="<%=location.url%>"><h4 class="content"><%= location.name %></h4></a>
+      <p class="content"><%= location.description %></p>
+    </div>
+  <% end %>
+</div>
