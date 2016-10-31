@@ -9,8 +9,8 @@ class LocationsController < ApplicationController
 
   def index
     response = RestClient.get  URL.to_s
-    print JSON.parse(response.body)
     weather = JSON.parse(response.body);
+    
     @current_weather = weather["weather"][0]["main"]
     @temprature = weather["main"]["temp"]
   end
